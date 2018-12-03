@@ -155,7 +155,7 @@ void token::close( name owner, const symbol& symbol )
 
 extern "C" {
   void apply(uint64_t receiver, uint64_t code, uint64_t action) {
-    token contract(name(receiver));
+    token contract( name receiver );
     if(code==receiver) {
       // handle all actions where originating with this contract
       if(action==name("issue").value) {
