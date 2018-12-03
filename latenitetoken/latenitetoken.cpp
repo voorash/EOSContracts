@@ -68,7 +68,7 @@ void token::sell( name from, name to, asset quantity, string memo ) {
   print(quantity >= myAsset);
   //eosio_assert(to == _self, "Sales must include a transfer of eos to the contract");
   SEND_INLINE_ACTION(*this, issue, { {_self, "active"_n} },
-    { from, asset(quantity.amount*10000, symbol("POON", 4)), memo }
+    { from, asset(quantity.amount*10000, symbol("YOURTOKENSYMBOL", 4)), memo }
   );
 }
 
