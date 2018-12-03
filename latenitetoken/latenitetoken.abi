@@ -35,20 +35,6 @@
        ]
     },
     {
-       "name": "retire",
-       "base": "",
-       "fields": [
-          {
-            "name":"quantity", 
-            "type":"asset"
-          },
-          {
-            "name":"memo", 
-            "type":"string"
-          }
-       ]
-    },
-    {
        "name": "close",
        "base": "",
        "fields": [
@@ -140,11 +126,6 @@
     {
       "name": "issue",
       "type": "issue",
-      "ricardian_contract": ""
-    },
-    {
-      "name": "retire",
-      "type": "retire",
       "ricardian_contract": ""
     },
     {
